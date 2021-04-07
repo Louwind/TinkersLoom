@@ -4,6 +4,15 @@ plugins {
 	id 'maven-publish'
 }
 
+allprojects {
+	repositories {
+		maven {
+			name "Jitpack"
+			url 'https://jitpack.io'
+		}
+	}
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
@@ -16,6 +25,8 @@ dependencies {
 
 	// Fabric API.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	// Reload
+	modImplementation 'com.github.Louwind:Reload:master-SNAPSHOT'
 }
 
 processResources {
@@ -40,9 +51,7 @@ java {
 }
 
 jar {
-	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
-	}
+	from "LICENSE"
 }
 
 publishing {
@@ -53,17 +62,6 @@ publishing {
 			}
 			artifact(sourcesJar) {
 				builtBy remapSourcesJar
-			}
-		}
-	}
-
-	repositories {
-		maven {
-			name = "GitHubPackages"
-			url = uri("https://maven.pkg.github.com/Louwind/TinkersLoom")
-			credentials {
-				username = System.getenv("GITHUB_ACTOR")
-				password = System.getenv("GITHUB_TOKEN")
 			}
 		}
 	}

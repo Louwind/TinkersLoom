@@ -1,22 +1,22 @@
 package github.Louwind.TinkersLoom.core.init;
 
-import github.Louwind.TinkersLoom.common.tool.stats.TinkerToolStats;
+import github.Louwind.TinkersLoom.common.tool.stats.TinkersToolStats;
 
 public class Stats {
 
-    public static final TinkerToolStats AXE = new TinkerToolStats.Builder()
+    public static final TinkersToolStats AXE = new TinkersToolStats.Builder()
             .setDamageBonus(6.0f)
             .setAttackSpeed(0.9f)
             .build();
 
-    public static final TinkerToolStats BROADSWORD = new TinkerToolStats.Builder()
+    public static final TinkersToolStats BROADSWORD = new TinkersToolStats.Builder()
             .setDamageBonus(3f)
             .setAttackSpeed(1.6f)
             .setMiningSpeedModifier(0.5f)
             .setDurabilityModifier(1.1f)
             .build();
 
-    public static final TinkerToolStats EXCAVATOR = new TinkerToolStats.Builder()
+    public static final TinkersToolStats EXCAVATOR = new TinkersToolStats.Builder()
             .setDamageBonus(1.5f)
             .setDamageModifier(1.25f)
             .setAttackSpeed(0.7f)
@@ -26,22 +26,22 @@ public class Stats {
             .setDefaultUpgrades(2)
             .build();
 
-    public static final TinkerToolStats KAMA = new TinkerToolStats.Builder()
+    public static final TinkersToolStats KAMA = new TinkersToolStats.Builder()
             .setDamageBonus(1.25f)
             .setAttackSpeed(1.3f)
             .build();
 
-    public static final TinkerToolStats MATTOCK = new TinkerToolStats.Builder()
+    public static final TinkersToolStats MATTOCK = new TinkersToolStats.Builder()
             .setDamageBonus(1.5f)
             .setAttackSpeed(1f)
             .build();
 
-    public static final TinkerToolStats PICKAXE = new TinkerToolStats.Builder()
+    public static final TinkersToolStats PICKAXE = new TinkersToolStats.Builder()
             .setDamageBonus(1f)
             .setAttackSpeed(1.2f)
             .build();
 
-    public static final TinkerToolStats SLEDGE_HAMMER = new TinkerToolStats.Builder()
+    public static final TinkersToolStats SLEDGE_HAMMER = new TinkersToolStats.Builder()
             .setDamageBonus(5f)
             .setDamageModifier(1.5f)
             .setAttackSpeed(0.5f)

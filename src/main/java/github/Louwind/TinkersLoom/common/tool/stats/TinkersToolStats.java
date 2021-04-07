@@ -5,7 +5,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 @Getter
-public class TinkerToolStats {
+public class TinkersToolStats {
 
     private final float attackSpeed;
     private final float damageBonus;
@@ -20,7 +20,7 @@ public class TinkerToolStats {
     private final int defaultUpgrades;
     private final int primaryHeadWeight;
 
-    public TinkerToolStats(float attackSpeed, float damageBonus, float damageCutoff, float durabilityModifier, float knockbackBonus, float miningSpeedModifier, float damageModifier, int defaultAbilities, int defaultTraits, int defaultUpgrades, int primaryHeadWeight) {
+    public TinkersToolStats(float attackSpeed, float damageBonus, float damageCutoff, float durabilityModifier, float knockbackBonus, float miningSpeedModifier, float damageModifier, int defaultAbilities, int defaultTraits, int defaultUpgrades, int primaryHeadWeight) {
         this.attackSpeed = attackSpeed;
         this.damageBonus = damageBonus;
         this.damageCutoff = damageCutoff;
@@ -52,8 +52,8 @@ public class TinkerToolStats {
         private int defaultUpgrades = 3;
         private int primaryHeadWeight = 1;
 
-        public TinkerToolStats build() {
-            return new TinkerToolStats(this.attackSpeed, this.damageBonus, this.damageCutoff, this.damageModifier, this.durabilityModifier, this.knockbackBonus, this.miningSpeedModifier, this.defaultAbilities, this.defaultTraits, this.defaultUpgrades, this.primaryHeadWeight);
+        public TinkersToolStats build() {
+            return new TinkersToolStats(this.attackSpeed, this.damageBonus, this.damageCutoff, this.damageModifier, this.durabilityModifier, this.knockbackBonus, this.miningSpeedModifier, this.defaultAbilities, this.defaultTraits, this.defaultUpgrades, this.primaryHeadWeight);
         }
 
     }

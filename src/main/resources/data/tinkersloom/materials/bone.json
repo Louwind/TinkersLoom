@@ -1,0 +1,48 @@
+{
+  "material": "tinkersloom:non_metallic",
+  "craftable": true,
+  "tier": 1,
+  "sortOrder": 3,
+  "textColor": "#EDE6BF",
+  "parts": [
+    {
+      "part": "#tinkersloom:head",
+      "stats": {
+        "durability": 100,
+        "miningSpeed": 2.5,
+        "harvestLevel": 1,
+        "attack": 1.25
+      },
+      "traits": [
+        {
+          "trait": "tinkersloom:splintering",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "part": "#tinkersloom:handle",
+      "stats": {
+        "durability": 0.75,
+        "miningSpeed": 1.0,
+        "attackSpeed": 1.1,
+        "attackDamage": 1.0
+      },
+      "traits": [
+        {
+          "trait": "tinkersloom:fractured",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "part": "#tinkersloom:extra",
+      "traits": [
+        {
+          "trait": "tinkersloom:fractured",
+          "level": 1
+        }
+      ]
+    }
+  ]
+}
