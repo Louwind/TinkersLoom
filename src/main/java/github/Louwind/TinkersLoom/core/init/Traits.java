@@ -1,6 +1,6 @@
 package github.Louwind.TinkersLoom.core.init;
 
-import github.Louwind.TinkersLoom.common.material.Trait;
+import github.Louwind.TinkersLoom.common.material.trait.Trait;
 
 public class Traits {
 

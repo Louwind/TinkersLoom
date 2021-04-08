@@ -3,13 +3,13 @@ package github.Louwind.TinkersLoom.client.resource;
 import com.google.gson.Gson;
 import github.Louwind.Reload.client.resource.SimpleJsonReloadListener;
 import github.Louwind.TinkersLoom.common.material.Material;
-import github.Louwind.TinkersLoom.common.util.serializable.MaterialType;
+import github.Louwind.TinkersLoom.common.util.serializable.MaterialSerializableType;
 import github.Louwind.TinkersLoom.common.util.TinkersGsons;
 import net.minecraft.util.Identifier;
 
 import static github.Louwind.TinkersLoom.common.registry.TinkersRegistry.MATERIAL;
 
-public class MaterialReloadListener extends SimpleJsonReloadListener<MaterialType> {
+public class MaterialReloadListener extends SimpleJsonReloadListener<MaterialSerializableType> {
 
     private static final Gson GSON = TinkersGsons.getMaterialGsonBuilder().create();
 

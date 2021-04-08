@@ -4,51 +4,51 @@ import github.Louwind.TinkersLoom.common.tool.stats.TinkersToolStats;
 
 public class Stats {
 
-    public static final TinkersToolStats AXE = new TinkersToolStats.Builder()
-            .setDamageBonus(6.0f)
-            .setAttackSpeed(0.9f)
+    public static final TinkersToolStats AXE = TinkersToolStats.builder()
+            .damageBonus(6.0f)
+            .attackSpeed(0.9f)
             .build();
 
-    public static final TinkersToolStats BROADSWORD = new TinkersToolStats.Builder()
-            .setDamageBonus(3f)
-            .setAttackSpeed(1.6f)
-            .setMiningSpeedModifier(0.5f)
-            .setDurabilityModifier(1.1f)
+    public static final TinkersToolStats BROADSWORD = TinkersToolStats.builder()
+            .damageBonus(3f)
+            .attackSpeed(1.6f)
+            .miningSpeedModifier(0.5f)
+            .durabilityModifier(1.1f)
             .build();
 
-    public static final TinkersToolStats EXCAVATOR = new TinkersToolStats.Builder()
-            .setDamageBonus(1.5f)
-            .setDamageModifier(1.25f)
-            .setAttackSpeed(0.7f)
-            .setMiningSpeedModifier(0.3f)
-            .setDurabilityModifier(3.75f)
-            .setKnockbackBonus(1f)
-            .setDefaultUpgrades(2)
+    public static final TinkersToolStats EXCAVATOR = TinkersToolStats.builder()
+            .damageBonus(1.5f)
+            .damageModifier(1.25f)
+            .attackSpeed(0.7f)
+            .miningSpeedModifier(0.3f)
+            .durabilityModifier(3.75f)
+            .knockbackBonus(1f)
+            .defaultUpgrades(2)
             .build();
 
-    public static final TinkersToolStats KAMA = new TinkersToolStats.Builder()
-            .setDamageBonus(1.25f)
-            .setAttackSpeed(1.3f)
+    public static final TinkersToolStats KAMA = TinkersToolStats.builder()
+            .damageBonus(1.25f)
+            .attackSpeed(1.3f)
             .build();
 
-    public static final TinkersToolStats MATTOCK = new TinkersToolStats.Builder()
-            .setDamageBonus(1.5f)
-            .setAttackSpeed(1f)
+    public static final TinkersToolStats MATTOCK = TinkersToolStats.builder()
+            .damageBonus(1.5f)
+            .attackSpeed(1f)
             .build();
 
-    public static final TinkersToolStats PICKAXE = new TinkersToolStats.Builder()
-            .setDamageBonus(1f)
-            .setAttackSpeed(1.2f)
+    public static final TinkersToolStats PICKAXE = TinkersToolStats.builder()
+            .damageBonus(1f)
+            .attackSpeed(1.2f)
             .build();
 
-    public static final TinkersToolStats SLEDGE_HAMMER = new TinkersToolStats.Builder()
-            .setDamageBonus(5f)
-            .setDamageModifier(1.5f)
-            .setAttackSpeed(0.5f)
-            .setMiningSpeedModifier(0.4f)
-            .setDurabilityModifier(4f)
-            .setPrimaryHeadWeight(2)
-            .setDefaultUpgrades(2)
+    public static final TinkersToolStats SLEDGE_HAMMER = TinkersToolStats.builder()
+            .damageBonus(5f)
+            .damageModifier(1.5f)
+            .attackSpeed(0.5f)
+            .miningSpeedModifier(0.4f)
+            .durabilityModifier(4f)
+            .primaryHeadWeight(2)
+            .defaultUpgrades(2)
             .build();
 
 }
