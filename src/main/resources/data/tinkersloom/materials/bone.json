@@ -1,5 +1,5 @@
 {
-  "material": "tinkersloom:non_metallic",
+  "type": "tinkersloom:non_metallic",
   "tier": 1,
   "textColor": "#EDE6BF",
   "parts": [

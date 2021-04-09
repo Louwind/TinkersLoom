@@ -1,6 +1,7 @@
 package github.Louwind.TinkersLoom.common.registry;
 
 import com.mojang.serialization.Lifecycle;
+import github.Louwind.TinkersLoom.common.material.Material;
 import github.Louwind.TinkersLoom.common.tool.part.TinkersToolPart;
 import github.Louwind.TinkersLoom.common.tool.update.TinkersToolUpdate;
 import github.Louwind.TinkersLoom.common.util.serializable.MaterialSerializableType;
@@ -12,7 +13,9 @@ import net.minecraft.util.registry.SimpleRegistry;
 
 public class TinkersRegistry {
 
-    public static final SimpleRegistry<MaterialSerializableType> MATERIAL = new SimpleRegistry<>(RegistryKey.ofRegistry(new Identifier("tinkersloom:material")), Lifecycle.stable());
+    public static final SimpleRegistry<Material> MATERIAL = new SimpleRegistry<>(RegistryKey.ofRegistry(new Identifier("tinkersloom:material")), Lifecycle.stable());
+
+    public static final SimpleRegistry<MaterialSerializableType> MATERIAL_TYPE = new SimpleRegistry<>(RegistryKey.ofRegistry(new Identifier("tinkersloom:material_type")), Lifecycle.stable());
 
     public static final SimpleRegistry<TinkersTool> TOOL = new SimpleRegistry<>(RegistryKey.ofRegistry(new Identifier("tinkersloom:tool")), Lifecycle.stable());
 

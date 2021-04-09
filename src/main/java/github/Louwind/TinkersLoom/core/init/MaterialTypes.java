@@ -18,7 +18,7 @@ public class MaterialTypes {
     public static final MaterialSerializableType SMELTABLE;
 
     protected static MaterialSerializableType createMaterial(String id, Supplier<JsonSerializer<? extends Material>> jsonSerializer) {
-        return Registry.register(MATERIAL, id, new MaterialSerializableType(jsonSerializer.get()));
+        return Registry.register(MATERIAL_TYPE, id, new MaterialSerializableType(jsonSerializer.get()));
     }
 
     static {

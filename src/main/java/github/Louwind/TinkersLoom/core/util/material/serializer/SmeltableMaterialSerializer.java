@@ -9,14 +9,14 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.JsonSerializer;
 
-import static github.Louwind.TinkersLoom.common.registry.TinkersRegistry.MATERIAL;
+import static github.Louwind.TinkersLoom.common.registry.TinkersRegistry.MATERIAL_TYPE;
 import static github.Louwind.TinkersLoom.core.init.MaterialTypes.SMELTABLE;
 
 public class SmeltableMaterialSerializer implements JsonSerializer<SmeltableMaterial> {
 
     @Override
     public void toJson(JsonObject json, SmeltableMaterial object, JsonSerializationContext context) {
-        json.addProperty("material", MATERIAL.getId(SMELTABLE).toString());
+        json.addProperty("type", MATERIAL_TYPE.getId(SMELTABLE).toString());
         json.addProperty("tier", object.getTier());
         json.addProperty("textColor", object.getTextColor());
         json.addProperty("fluid", object.getFluid().toString());

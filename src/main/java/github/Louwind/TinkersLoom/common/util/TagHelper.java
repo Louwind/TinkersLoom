@@ -23,8 +23,7 @@ public class TagHelper {
     public static Material getMaterial(CompoundTag tag, String key) {
         Identifier id = TagHelper.getIdentifier(tag, key);
 
-//        return MATERIAL.get(id);
-        return null;
+        return MATERIAL.get(id);
     }
 
     public static <T> Set<T> getSet(CompoundTag tag, Function<CompoundTag, T> mapper, String key) {
