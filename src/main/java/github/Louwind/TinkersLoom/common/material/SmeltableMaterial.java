@@ -10,8 +10,8 @@ public class SmeltableMaterial extends Material {
 
     protected final Identifier fluid;
 
-    protected final Integer fluidPerUnit;
+    protected final int fluidPerUnit;
 
-    protected final Integer temperature;
+    protected final int temperature;
 
 }
