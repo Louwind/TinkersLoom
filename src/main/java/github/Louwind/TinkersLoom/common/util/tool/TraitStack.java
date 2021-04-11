@@ -21,7 +21,7 @@ public class TraitStack {
     public static TraitStack from(CompoundTag tag) {
         return TraitStack.builder()
                 .data(tag.getCompound("data"))
-                .level(tag.getInt("lvl"))
+                .level(tag.getInt("level"))
                 .trait(TagHelper.getTrait(tag, "trait"))
                 .build();
     }

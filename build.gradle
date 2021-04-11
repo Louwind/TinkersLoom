@@ -37,6 +37,10 @@ processResources {
 	}
 }
 
+minecraft {
+	accessWidener "src/main/resources/tinkersloom.accesswidener"
+}
+
 tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
 

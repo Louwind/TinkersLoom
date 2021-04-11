@@ -4,6 +4,7 @@
   "package": "github.Louwind.TinkersLoom.core.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "MixinItemStack"
   ],
   "client": [
   ],

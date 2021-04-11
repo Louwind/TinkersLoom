@@ -5,6 +5,7 @@ import github.Louwind.TinkersLoom.common.util.TagHelper;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
 
 import java.util.Set;
@@ -13,6 +14,8 @@ import java.util.Set;
 @Setter
 @SuperBuilder
 public class ToolStack {
+
+    public static final ToolStack EMPTY = ToolStack.builder().build();
 
     private TinkersTool tool;
 
@@ -26,6 +29,12 @@ public class ToolStack {
                 .parts(TagHelper.getSet(tag, ToolPartStack::from, "parts"))
                 .updates(TagHelper.getSet(tag, ToolUpdateStack::from, "updates"))
                 .build();
+    }
+
+    public static ToolStack from(ItemStack stack) {
+        CompoundTag compoundTag = stack.getOrCreateSubTag("tinkersloom:tool");
+
+        return !compoundTag.isEmpty() ? ToolStack.from(compoundTag) : EMPTY;
     }
 
 }

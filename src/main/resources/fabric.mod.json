@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "tinkersloom",
   "version": "${version}",
-
   "name": "Tinkers' Loom",
   "description": "Tinker your tools, think and retool!",
   "authors": [
@@ -12,10 +11,8 @@
     "homepage": "https://github.com/Louwind/TinkersLoom",
     "sources": "https://github.com/Louwind/TinkersLoom"
   },
-
   "license": "CC0-1.0",
   "icon": "assets/tinkersloom/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -29,7 +26,7 @@
     "tinkersloom.client.mixins.json",
     "tinkersloom.core.mixins.json"
   ],
-
+  "accessWidener" : "tinkersloom.accesswidener",
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",

@@ -2,6 +2,9 @@ package github.Louwind.TinkersLoom.core.item;
 
 import com.google.common.collect.Multimap;
 import github.Louwind.TinkersLoom.common.tool.TinkersTool;
+import github.Louwind.TinkersLoom.common.util.TinkersStatsHelper;
+import github.Louwind.TinkersLoom.common.util.TinkersTraitHelper;
+import github.Louwind.TinkersLoom.common.util.tool.ToolStack;
 import net.fabricmc.fabric.api.tool.attribute.v1.DynamicAttributeTool;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EquipmentSlot;
@@ -25,17 +28,22 @@ public class TinkersToolItem extends Item implements DynamicAttributeTool {
 
     @Override
     public Multimap<EntityAttribute, EntityAttributeModifier> getDynamicModifiers(EquipmentSlot slot, ItemStack stack, @Nullable LivingEntity user) {
-        return DynamicAttributeTool.EMPTY;
+        return TinkersTraitHelper.getAttributeTraits(stack, this.tool, ToolStack.from(stack), user);
     }
 
     @Override
     public int getMiningLevel(Tag<Item> tag, BlockState state, ItemStack stack, @Nullable LivingEntity user) {
-        return 0;
+        return TinkersStatsHelper.getMiningLevel(stack);
     }
 
     @Override
     public float getMiningSpeedMultiplier(Tag<Item> tag, BlockState state, ItemStack stack, @Nullable LivingEntity user) {
         return 0;
+    }
+
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
     }
 
 }

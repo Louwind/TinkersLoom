@@ -7,14 +7,13 @@ import github.Louwind.TinkersLoom.common.material.Material;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.JsonSerializer;
 
-import static github.Louwind.TinkersLoom.common.registry.TinkersRegistry.MATERIAL_TYPE;
 import static github.Louwind.TinkersLoom.core.init.MaterialTypes.NON_METALLIC;
 
 public class NonMetallicMaterialSerializer implements JsonSerializer<Material> {
 
     @Override
     public void toJson(JsonObject json, Material object, JsonSerializationContext context) {
-        json.addProperty("type", MATERIAL_TYPE.getId(NON_METALLIC).toString());
+        json.addProperty("type", "tinkersloom:non_metallic");
         json.addProperty("tier", object.getTier());
         json.addProperty("textColor", object.getTextColor());
     }

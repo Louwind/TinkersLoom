@@ -5,6 +5,7 @@ import github.Louwind.TinkersLoom.common.material.trait.Trait;
 import github.Louwind.TinkersLoom.common.tool.TinkersTool;
 import github.Louwind.TinkersLoom.common.tool.part.TinkersToolPart;
 import github.Louwind.TinkersLoom.common.tool.update.TinkersToolUpdate;
+import github.Louwind.TinkersLoom.common.util.serializable.TraitSerializableType;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Identifier;
 

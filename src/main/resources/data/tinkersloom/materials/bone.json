@@ -6,40 +6,31 @@
     {
       "part": "#tinkersloom:head",
       "stats": {
+        "attackDamage": 1.25,
+        "attackSpeed": 1.1,
         "durability": 100,
         "miningSpeed": 2.5,
-        "harvestLevel": 1,
-        "attack": 1.25
+        "miningLevel": 1
       },
       "traits": [
-        {
-          "trait": "tinkersloom:splintering",
-          "level": 1
-        }
+        "tinkersloom:splintering"
       ]
     },
     {
       "part": "#tinkersloom:handle",
       "stats": {
-        "durability": 0.75,
-        "miningSpeed": 1.0,
-        "attackSpeed": 1.1,
-        "attackDamage": 1.0
+        "durabilityModifier": 0.75,
+        "miningSpeedModifier": 1.0,
+        "attackDamageModifier": 1.0
       },
       "traits": [
-        {
-          "trait": "tinkersloom:fractured",
-          "level": 1
-        }
+        "tinkersloom:fractured"
       ]
     },
     {
       "part": "#tinkersloom:extra",
       "traits": [
-        {
-          "trait": "tinkersloom:fractured",
-          "level": 1
-        }
+        "tinkersloom:fractured"
       ]
     }
   ]

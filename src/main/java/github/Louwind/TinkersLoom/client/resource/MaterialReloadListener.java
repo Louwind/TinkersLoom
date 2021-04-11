@@ -13,7 +13,7 @@ public class MaterialReloadListener extends SimpleJsonReloadListener<Material> {
     private static final Gson GSON = TinkersGsons.getMaterialGsonBuilder().create();
 
     public MaterialReloadListener() {
-        super(GSON, Material.class, MATERIAL, "material");
+        super(GSON, Material.class, MATERIAL, "materials");
     }
 
     @Override

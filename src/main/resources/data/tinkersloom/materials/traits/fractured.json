@@ -1,0 +1,7 @@
+{
+  "trait": "tinkersloom:leveling_attribute",
+  "attribute": "minecraft:generic.max_health",
+  "operation": "multiply_base",
+  "name": "Fractured",
+  "multiplier": 0.2
+}
