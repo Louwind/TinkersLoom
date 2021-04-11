@@ -1,6 +1,7 @@
 package github.Louwind.TinkersLoom.common.util.tool;
 
 import github.Louwind.TinkersLoom.common.material.Material;
+import github.Louwind.TinkersLoom.common.material.stats.TinkersMaterialStats;
 import github.Louwind.TinkersLoom.common.tool.part.TinkersToolPart;
 import github.Louwind.TinkersLoom.common.util.TagHelper;
 import lombok.Getter;
@@ -27,6 +28,10 @@ public class ToolPartStack {
                 .part(TagHelper.getToolPart(tag, "part"))
                 .traits(TagHelper.getSet(tag, TraitStack::from, "traits"))
                 .build();
+    }
+
+    public TinkersMaterialStats getStats() {
+        return this.material.getStats();
     }
 
 }

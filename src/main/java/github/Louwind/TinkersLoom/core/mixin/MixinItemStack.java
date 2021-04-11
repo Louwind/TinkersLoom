@@ -1,5 +1,6 @@
 package github.Louwind.TinkersLoom.core.mixin;
 
+import github.Louwind.TinkersLoom.common.util.TinkersStatsHelper;
 import github.Louwind.TinkersLoom.common.util.tool.ToolStack;
 import github.Louwind.TinkersLoom.core.item.TinkersToolItem;
 import net.minecraft.item.ItemStack;
@@ -18,8 +19,7 @@ public class MixinItemStack {
         if(stack.getItem() instanceof TinkersToolItem) {
             ToolStack toolStack = ToolStack.from(stack);
 
-            // TODO calculate max damage
-            cir.setReturnValue(0);
+            cir.setReturnValue(TinkersStatsHelper.getDurability(toolStack));
         }
 
     }

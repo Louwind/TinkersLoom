@@ -1,5 +1,6 @@
 package github.Louwind.TinkersLoom.common.material;
 
+import github.Louwind.TinkersLoom.common.material.stats.TinkersMaterialStats;
 import github.Louwind.TinkersLoom.common.util.serializable.MaterialSerializableType;
 import lombok.Getter;
 import lombok.experimental.SuperBuilder;
@@ -8,6 +9,8 @@ import org.jetbrains.annotations.NotNull;
 @Getter
 @SuperBuilder
 public class Material implements Comparable<Material> {
+
+    protected final TinkersMaterialStats stats;
 
     protected final int tier;
 

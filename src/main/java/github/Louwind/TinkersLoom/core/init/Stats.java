@@ -10,7 +10,7 @@ public class Stats {
             .build();
 
     public static final TinkersToolStats BROADSWORD = TinkersToolStats.builder()
-            .attackDamage(3F)
+            .attackDamage(3.0F)
             .attackSpeed(1.6F)
             .miningSpeedModifier(0.5F)
             .durabilityModifier(1.1F)
@@ -22,7 +22,7 @@ public class Stats {
             .attackSpeed(0.7F)
             .miningSpeedModifier(0.3F)
             .durabilityModifier(3.75F)
-            .knockbackBonus(1F)
+            .knockbackBonus(1.0F)
             .defaultUpgrades(2)
             .build();
 
@@ -37,16 +37,16 @@ public class Stats {
             .build();
 
     public static final TinkersToolStats PICKAXE = TinkersToolStats.builder()
-            .attackDamage(1F)
+            .attackDamage(1.0F)
             .attackSpeed(1.2F)
             .build();
 
     public static final TinkersToolStats SLEDGE_HAMMER = TinkersToolStats.builder()
-            .attackDamage(5F)
+            .attackDamage(5.0F)
             .attackDamageModifier(1.5F)
             .attackSpeed(0.5F)
             .miningSpeedModifier(0.4F)
-            .durabilityModifier(4F)
+            .durabilityModifier(4.0F)
             .primaryHeadWeight(2)
             .defaultUpgrades(2)
             .build();

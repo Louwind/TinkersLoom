@@ -10,14 +10,13 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 @Getter
+@Setter
 @SuperBuilder
 public class TraitStack {
 
     @Nullable
-    @Setter
     private CompoundTag data;
 
-    @Setter
     private int level;
 
     @NotNull
