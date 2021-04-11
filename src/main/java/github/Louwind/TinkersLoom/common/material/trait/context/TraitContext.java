@@ -39,6 +39,7 @@ public class TraitContext {
         return this.getTraitStack().getTrait();
     }
 
+    @Nullable
     public CompoundTag getTraitData() {
         return this.getTraitStack().getData();
     }

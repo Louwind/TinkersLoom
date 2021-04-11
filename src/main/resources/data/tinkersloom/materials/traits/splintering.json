@@ -1,0 +1,8 @@
+{
+  "trait": "tinkersloom:increasing_attribute_on_attack",
+  "attribute": "minecraft:generic.attack_damage",
+  "operation": "addition",
+  "name": "Splintering",
+  "amount": 0.3,
+  "stacks": 5
+}

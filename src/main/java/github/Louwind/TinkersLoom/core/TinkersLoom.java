@@ -2,7 +2,9 @@ package github.Louwind.TinkersLoom.core;
 
 import github.Louwind.TinkersLoom.client.resource.MaterialReloadListener;
 import github.Louwind.TinkersLoom.client.resource.TraitReloadListener;
+import github.Louwind.TinkersLoom.core.tool.material.trail.callback.IncreasingAttributeTraitCallback;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.util.registry.Registry;
 
@@ -20,6 +22,9 @@ public class TinkersLoom implements ModInitializer {
 	public void onInitialize() {
 		ResourceManagerHelper.get(SERVER_DATA).registerReloadListener(MATERIAL_RELOAD_LISTENER);
 		ResourceManagerHelper.get(SERVER_DATA).registerReloadListener(TRAIT_RELOAD_LISTENER);
+
+		// Event Callbacks
+		AttackEntityCallback.EVENT.register(IncreasingAttributeTraitCallback.INSTANCE);
 
 		Registry.register(TOOL, "tinkersloom:axe", AXE);
 		Registry.register(TOOL, "tinkersloom:battleaxe", BATTLEAXE);

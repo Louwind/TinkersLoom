@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableSetMultimap;
 import com.google.common.collect.Multimap;
 import github.Louwind.TinkersLoom.common.material.trait.context.TraitContext;
 import github.Louwind.TinkersLoom.common.tool.TinkersTool;
+import github.Louwind.TinkersLoom.common.util.serializable.TraitSerializableType;
 import github.Louwind.TinkersLoom.common.util.tool.ToolPartStack;
 import github.Louwind.TinkersLoom.common.util.tool.ToolStack;
 import github.Louwind.TinkersLoom.common.util.tool.TraitStack;
@@ -18,8 +19,16 @@ import java.util.stream.Collectors;
 
 public class TinkersTraitHelper {
 
+    public static Set<TraitStack> getTraits(ToolStack toolStack, TraitSerializableType type) {
+        return TinkersTraitHelper.getTraits(toolStack)
+                .stream()
+                .filter(traitStack -> traitStack.getTrait().getType() == type)
+                .collect(Collectors.toSet());
+    }
+
     public static Set<TraitStack> getTraits(ToolStack toolStack) {
-        return toolStack.getParts().stream()
+        return toolStack.getParts()
+                .stream()
                 .map(ToolPartStack::getTraits)
                 .flatMap(Set::stream)
                 .collect(Collectors.toSet());
